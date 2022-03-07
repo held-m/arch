@@ -51,6 +51,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 `reboot`
 
 
-
+install sway `git clone https://aur.archlinux.org/sway-git.git`
+`sudo pacman -S wofi waybar`
 
 
