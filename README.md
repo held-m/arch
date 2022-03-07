@@ -15,17 +15,17 @@ format: `mkfs.ext4 /dev/DiskPath`
 `mkdir /mnt/efi`
 `mount /dev/EfiPath /mnt/efi`
 
-`pacstrap /mnt base linux linux-firmware nano nvim netctl iwd dialog dhcpd grub efibootmgr os-prober`
+`pacstrap /mnt base linux linux-firmware nano neovim iwd dialog dhcpcd grub efibootmgr os-prober sudo git base-devel bash-completion alacritty`
 
 `genfstab -U /mnt >> /mnt/etc/fstab`
 
 `arch-chroot /mnt`
 
 
-get list of timezones: `ln -sf /usr/chare/zoneinfo/Europe/`
+get list of timezones: `ln -sf /usr/share/zoneinfo/Europe/... /etc/loclatime`
 `hwclock --systohc` 
 
-Uncomment en_US.UTF-8 UTF-8 `nvim /etc/local.gen` 
+Uncomment en_US.UTF-8 UTF-8 `nvim /etc/locale.gen` 
 
 `nvim /etc/locale.conf` add `LANG=en_US.UTF-8`
 
@@ -38,7 +38,7 @@ Uncomment en_US.UTF-8 UTF-8 `nvim /etc/local.gen`
 127.0.1.1   somename.local  somename
 ```
 ```
-useradd -G wheel, audio, video -m UserName`
+useradd -G wheel,audio,video -m UserName`
 passwd UserName
 ```
 
@@ -50,8 +50,17 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 `reboot`
 
+Install SWAY:
+    aur: swaybg-git wlroots-git sway-git
 
+    
 install sway `git clone https://aur.archlinux.org/sway-git.git`
 `sudo pacman -S wofi waybar`
+
+`git clone`
+`ln -s /home/held/arch/nvim /home/held/.config/`
+`ln -s /home/held/arch/sway /home/held/.config/`
+`ln -s /home/held/arch/waybar /home/held/.config/`
+`ln -s /home/held/arch/wofi /home/held/.config/`
 
 
