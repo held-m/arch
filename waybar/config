@@ -20,7 +20,7 @@
     "network",
     "backlight",
     "battery",
-    "battery#bat2",
+    //"battery#bat2",
     "keyboard-state",
     "sway/language",
     "clock",
@@ -29,7 +29,8 @@
      "sway/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
-         "format": "{name}: {icon}",
+        // "format": "{name}: {icon}",
+        "format": "{name}",
          "format-icons": {
              "1": "",
              "2": "",
@@ -46,7 +47,7 @@
         "capslock": true,
         "format": "{icon}",
         "format-icons": {
-            "locked": "⬆",
+            "locked": "4444",
             "unlocked": " "
         }
     },
@@ -131,8 +132,8 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        //"format-charging": "{capacity}% ",
+        //"format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",

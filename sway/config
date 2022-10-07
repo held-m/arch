@@ -14,7 +14,8 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+# set $term alacritty
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -28,9 +29,12 @@ set $menu wofi --show=drun --lines=5 --prompt=""
 output * bg /usr/share/backgrounds/sway/firewatcher.jpg fill
 
 set $d1 eDP-1
-set $d2 DVI-I-1
-set $d3 DVI-I-2
-# set $d1 eDP-1
+# set $d2 DVI-I-1
+# set $d3 DVI-I-2
+set $d2 DP-3
+set $d3 DP-4
+set $d4 HDMI-A-1
+set $d5 DP-5
 #
 # Example configuration:
 #
@@ -47,10 +51,12 @@ set $d3 DVI-I-2
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+         timeout 300 'swaymsg input "type:keyboard" xkb_layout us && swaylock -f -c 000000 --image /usr/share/backgrounds/sway/firewatcher.jpg' \
+         timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         timeout 1200 'systemctl hibernate' \
+         before-sleep 'swaylock -f -c 000000 --image /usr/share/backgrounds/sway/firewatcher.jpg' \
+         after-resume 'sudo ./sound.sh'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -173,6 +179,30 @@ set $d3 DVI-I-2
     workspace 3_8 output $d3
     workspace 3_9 output $d3
     workspace 3_10 output $d3
+
+    workspace 4_1 output $d4
+    workspace 4_2 output $d4
+    workspace 4_3 output $d4
+    workspace 4_4 output $d4
+    workspace 4_5 output $d4
+    workspace 4_6 output $d4
+    workspace 4_7 output $d4
+    workspace 4_8 output $d4
+    workspace 4_9 output $d4
+    workspace 4_10 output $d4
+
+
+    #after sleep sometime get DP-5
+    workspace 3_1 output $d5
+    workspace 3_2 output $d5
+    workspace 3_3 output $d5
+    workspace 3_4 output $d5
+    workspace 3_5 output $d5
+    workspace 3_6 output $d5
+    workspace 3_7 output $d5
+    workspace 3_8 output $d5
+    workspace 3_9 output $d5
+    workspace 3_10 output $d5
 # Workspaces:
 #
     # Switch to workspace
@@ -253,9 +283,36 @@ set $d3 DVI-I-2
         
         bindsym Escape mode "default"
     }
+    mode "display4" {
+        
+        bindsym 1 workspace 4_1, mode default
+        bindsym 2 workspace 4_2, mode default
+        bindsym 3 workspace 4_3, mode default
+        bindsym 4 workspace 4_4, mode default
+        bindsym 5 workspace 4_5, mode default
+        bindsym 6 workspace 4_6, mode default
+        bindsym 7 workspace 4_7, mode default
+        bindsym 8 workspace 4_8, mode default
+        bindsym 9 workspace 4_9, mode default
+        bindsym 0 workspace 4_10, mode default
+
+        bindsym Shift+1 move container to workspace 4_1, mode default
+        bindsym Shift+2 move container to workspace 4_2, mode default
+        bindsym Shift+3 move container to workspace 4_3, mode default
+        bindsym Shift+4 move container to workspace 4_4, mode default
+        bindsym Shift+5 move container to workspace 4_5, mode default
+        bindsym Shift+6 move container to workspace 4_6, mode default
+        bindsym Shift+7 move container to workspace 4_7, mode default
+        bindsym Shift+8 move container to workspace 4_8, mode default
+        bindsym Shift+9 move container to workspace 4_9, mode default
+        bindsym Shift+0 move container to workspace 4_10, mode default
+        
+        bindsym Escape mode "default"
+    }
     bindsym $mod+1 mode "display1"
     bindsym $mod+2 mode "display2"
     bindsym $mod+3 mode "display3"
+    bindsym $mod+4 mode "display4"
 
     # bindsym $mod+1 workspace number 1
     # bindsym $mod+2 workspace number 2
@@ -430,7 +487,13 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Notification Daemon
-# exec swaync
+exec swaync
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
 
+
+# Notification Daemon
+# exec swaync
+# exec_always --no-startup-id workstyle &> /tmp/workstyle.log
 
 include /etc/sway/config.d/*
