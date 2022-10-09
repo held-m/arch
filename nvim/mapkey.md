@@ -8,12 +8,14 @@
 | `k`               | Normal    | move up                           |
 | `l`               | Normal    | move right                        |
 |                   |           |                                   |
+|                   |           |                                   |
 | `i`               | Normal    | Insert mode before a symbol       |
 | `I`               | Normal    | Insert mode to the start a line   |
 | `a`               | Normal    | Insert mode after a symbol        |
 | `A`               | Normal    | Insert mode to the end a line     |
 | `o`               | Normal    | Insert mode next line             |
 | `O`               | Normal    | Insert mode above line            |
+|                   |           |                                   |
 |                   |           |                                   |
 | `f+symbol`        | Normal    | Move  forward on a symbol         |
 | `F+symbol`        | Normal    | Move back on a symbol             |
