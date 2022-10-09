@@ -1,6 +1,6 @@
 
 
-
+### Base
 | Shortcut          | Mode      | Description                       |
 |:-:                |:-:        |:-:                                |
 | `h`               |           | open tree                         |
@@ -8,7 +8,7 @@
 | `k`               |           | open tree                         |
 | `l`               |           | open tree                         |
 
-                               NERDTree                                            
+### NERDTree                                            
 | Shortcut          | Mode      | Description                       |
 |:-:                |:-:        |:-:                                |
 | `M-n`             |           | open tree                         |
