@@ -3,10 +3,22 @@
 ### Base
 | Shortcut          | Mode      | Description                       |
 |:-:                |:-:        |:-:                                |
-| `h`               |           | open tree                         |
-| `j`               |           | open tree                         | 
-| `k`               |           | open tree                         |
-| `l`               |           | open tree                         |
+| `h`               | Normal    | move left                         |
+| `j`               | Normal    | move down                         | 
+| `k`               | Normal    | move up                           |
+| `l`               | Normal    | move right                        |
+|                   |           |                                   |
+| `i`               | Normal    | Insert mode before a symbol       |
+| `I`               | Normal    | Insert mode to the start a line   |
+| `a`               | Normal    | Insert mode after a symbol        |
+| `A`               | Normal    | Insert mode to the end a line     |
+| `o`               | Normal    | Insert mode next line             |
+| `O`               | Normal    | Insert mode above line            |
+|                   |           |                                   |
+| `f+symbol`        | Normal    | Move  forward on a symbol         |
+| `F+symbol`        | Normal    | Move back on a symbol             |
+| `t+symbol`        | Normal    | Move forward before a symbol      |
+| `T+symbol`        | Normal    | Move back after a symbol          |
 
 ### NERDTree                                            
 | Shortcut          | Mode      | Description                       |
