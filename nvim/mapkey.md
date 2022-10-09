@@ -7,7 +7,7 @@
 | `j`               | Base          |           | open tree                         | 
 | `k`               | Base          |           | open tree                         |
 | `l`               | Base          |           | open tree                         |
-|---                |---            |---        |---                                |
+|                   |               |           |                                   |
 | `M-n`             | NERDTree      |           | open tree                         |
 | `M-n`             | NERDTree      |           | open tree                         |
 | `M-t`             | NERDTree      |           | toggle tree                       |
