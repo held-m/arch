@@ -19,6 +19,13 @@
 | `F+symbol`        | Normal    | Move back on a symbol             |
 | `t+symbol`        | Normal    | Move forward before a symbol      |
 | `T+symbol`        | Normal    | Move back after a symbol          |
+|                   |           |                                   |
+| `*`               | Normal    | Move forward to same word         |
+| `#`               | Normal    | Move back to same word            |
+| `/`               | Normal    | Search                            |
+| `:%s/oldSymbols/NewSybols`               | Normal    | Replace in all buffer         |
+| `:10,20s/oldSymbols/NewSybols`               | Normal    | Replace between 18 line and 20         |
+
 
 ### NERDTree                                            
 | Shortcut          | Mode      | Description                       |
