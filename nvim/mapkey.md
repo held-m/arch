@@ -5,9 +5,9 @@
 | `k`               | Base          |           |open tree                          |
 | `l`               | Base          |           |open tree                          |
 |-------------------|---------------|-----------------------------------------------|
-| `M-n`             | NERDTree      | open tree                                     |
-| `M-n`             | NERDTree      | open tree                                     |
-| `M-t`             | NERDTree      | toggle tree                                   |
-| `M-f`             | NERDTree      | find of tree                                  |
-| `t`               | NERDTree      | open new tab                                  |
-| `gt`              | NERDTree      | next tab                                      |
+| `M-n`             | NERDTree      |           |open tree                          |
+| `M-n`             | NERDTree      |           |open tree                          |
+| `M-t`             | NERDTree      |           |toggle tree                        |
+| `M-f`             | NERDTree      |           |find of tree                       |
+| `t`               | NERDTree      |           |open new tab                       |
+| `gt`              | NERDTree      |           |next tab                           |
