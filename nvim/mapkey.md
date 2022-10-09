@@ -1,16 +1,19 @@
 
 
 
-| Shortcut          | Component     | Mode      | Description                       |
-|---                |---            |---        |---                                |
-| `h`               | Base          |           | open tree                         |
-| `j`               | Base          |           | open tree                         | 
-| `k`               | Base          |           | open tree                         |
-| `l`               | Base          |           | open tree                         |
-|                               :-:NERDTree:-:                                            |
-| `M-n`             | NERDTree      |           | open tree                         |
-| `M-n`             | NERDTree      |           | open tree                         |
-| `M-t`             | NERDTree      |           | toggle tree                       |
-| `M-f`             | NERDTree      |           | find of tree                      |
-| `t`               | NERDTree      |           | open new tab                      |
-| `gt`              | NERDTree      |           | next tab                          |
+| Shortcut          | Mode      | Description                       |
+|:-:                |:-:        |:-:                                |
+| `h`               |           | open tree                         |
+| `j`               |           | open tree                         | 
+| `k`               |           | open tree                         |
+| `l`               |           | open tree                         |
+
+                               NERDTree                                            
+| Shortcut          | Mode      | Description                       |
+|:-:                |:-:        |:-:                                |
+| `M-n`             |           | open tree                         |
+| `M-n`             |           | open tree                         |
+| `M-t`             |           | toggle tree                       |
+| `M-f`             |           | find of tree                      |
+| `t`               |           | open new tab                      |
+| `gt`              |           | next tab                          |
