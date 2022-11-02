@@ -1,7 +1,9 @@
-set termguicolors
-let ayucolor="mirage"
-colorscheme ayu 
+" set termguicolors
+" let ayucolor="mirage"
+" colorscheme ayu 
 
-hi Visual guifg=White guibg=LightBlue gui=none
+" hi Visual guifg=White guibg=LightBlue gui=none
 
 let g:transparent_enabled = v:true
+
+

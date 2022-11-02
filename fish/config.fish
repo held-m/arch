@@ -3,4 +3,5 @@
 #    exec zellij
     # Commands to run in interactive sessions can go here
 #end
-kubectl completion fish | source
+
+source ~/.config/fish/functions/*

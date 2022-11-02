@@ -52,19 +52,27 @@ Plug 'morhetz/gruvbox'
 " Plug 'ayu-theme/ayu-vim'
 Plug 'xiyaowong/nvim-transparent'
 Plug 'Shatur/neovim-ayu'
+Plug 'held-m/neovim-sand'
 
+" Show colors
+Plug 'norcalli/nvim-colorizer.lua'
 " go
-Plug 'sebdah/vim-delve'
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'sebdah/vim-delve'
+ " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'ray-x/go.nvim'
+Plug 'ray-x/guihua.lua'
+
 " rust
 Plug 'rust-lang/rust.vim'
 
 " For NERDTree
-Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
+" Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdcommenter'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Telescope
 Plug 'nvim-telescope/telescope.nvim'
@@ -102,6 +110,9 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " nice tabs
 Plug 'romgrk/barbar.nvim'
+
+" git blame
+Plug 'f-person/git-blame.nvim'
 call plug#end()
 
 set splitbelow
@@ -115,11 +126,14 @@ tnoremap <Esc> <C-\><C-n>
 
 source ~/.config/nvim/autocomplete.vim 
 source ~/.config/nvim/colorscheme.vim 
-"source ~/.config/nvim/colorscheme.lua
+source ~/.config/nvim/colorscheme.lua
 source ~/.config/nvim/lspconfig.lua
 " source ~/.config/nvim/prettier.lua
-source ~/.config/nvim/nerdtree.vim
+source ~/.config/nvim/nerdtree.lua
 source ~/.config/nvim/floatterm.vim
 source ~/.config/nvim/telescope.vim
 
 source ~/.config/nvim/lualine.lua
+source ~/.config/nvim/colorizer.lua
+source ~/.config/nvim/golang.vim
+source ~/.config/nvim/golang.lua
