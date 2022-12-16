@@ -1,1 +1,2 @@
+--- GO
 require('go').setup()

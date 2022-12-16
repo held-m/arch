@@ -1,0 +1,2 @@
+-- Notify
+require("notify").setup()

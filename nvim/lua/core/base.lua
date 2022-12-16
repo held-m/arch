@@ -1,3 +1,4 @@
+-- turn on mouse navigate
 vim.cmd [[set mouse=a]]
 
 -- clipboard
@@ -22,4 +23,7 @@ vim.g.loaded_node_provider = 0
 -- vim.opt.undodir = vim.fn.expand('~/.nvim/undodir')
 vim.o.undofile = true
 
-vim.wo.colorcolumn = "120"
+vim.wo.colorcolumn = "90"
+
+-- must be before some plugins
+vim.opt.termguicolors = true

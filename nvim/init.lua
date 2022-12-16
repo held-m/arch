@@ -1,0 +1,13 @@
+
+require('plugins')
+require('core/base')
+require('core/keybinds')
+require('core/notify')
+require('core/nvim-comment')
+require('core/which-key')
+require('lsp/nvim-treesitter')
+require('lsp/mason')
+require('lsp/golang')
+require('navigate/nvim-tree')
+require('view/lualine')
+require('view/neovim-sand')

@@ -26,7 +26,8 @@ set $menu wofi --show=drun --lines=5 --prompt=""
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # output * bg /usr/share/backgrounds/sway/useIt.jpg fill
-output * bg /usr/share/backgrounds/sway/firewatcher.jpg fill
+# output * bg /usr/share/backgrounds/sway/firewatcher.jpg fill
+output * bg /usr/share/backgrounds/sway/christmas5.jpg fill
 
 set $d1 eDP-1
 # set $d2 DVI-I-1
@@ -52,10 +53,10 @@ set $d5 DP-5
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 'swaymsg input "type:keyboard" xkb_layout us && swaylock -f -c 000000 --image /usr/share/backgrounds/sway/firewatcher.jpg' \
+         timeout 300 'swaymsg input "type:keyboard" xkb_layout us && swaylock -f -c 000000 --image /usr/share/backgrounds/sway/christmas5.jpg' \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          timeout 1200 'systemctl hibernate' \
-         before-sleep 'swaylock -f -c 000000 --image /usr/share/backgrounds/sway/firewatcher.jpg' \
+         before-sleep 'swaylock -f -c 000000 --image /usr/share/backgrounds/sway/christmas5.jpg' \
          after-resume 'sudo ./sound.sh'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
